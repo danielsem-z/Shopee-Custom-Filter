@@ -1,9 +1,16 @@
 # Shopee Custom Filter
-## Uso
 
 Este é um script desenvolvido para personalizar e filtrar os resultados de pesquisa no site Shopee.
 
-Funcionalidades:
+## Uso:
+
+1. Você deve alterar o seu CEP no script.js
+2. Acesse qualquer pagina da Shopee
+3. Clique no botão flutuante "Apenas Correios" no lado direito da pagina.
+4. Repita o passo 3 ate você ver que não tem mais alteração nos itens disponiveis
+5. Os itens que sobrarem são produtos que suportam a entrega pelo Correios
+
+## Funcionalidades:
 
 * O script é projetado para funcionar em qualquer página da Shopee, permitindo que seja executado em diferentes seções do site, como resultados de pesquisa, páginas de categorias, etc.
 * O script busca todos os links da página e verifica se eles correspondem a um padrão específico. Ele filtra apenas os links que correspondem a um formato específico, contendo informações relevantes para a verificação de suporte de entrega pelos Correios.
