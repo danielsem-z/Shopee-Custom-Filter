@@ -140,20 +140,24 @@ window.filtrar_itens = function () {
 };
 
 window.intervalo = setInterval(() => {
-  // Cria um botão para filtrar os itens
-  let button = document.createElement("button");
-  button.id = "plugindsz";
-  button.className = "shopee-button-solid shopee-button-solid--primary mpD9DF";
-  button.style.backgroundColor = "rgb(163, 0, 255)";
-  button.style.position = "fixed";
-  button.style.right = "0";
-  button.style.bottom = "55%";
-  button.style.width = "94px";
-  button.style.zIndex = "9999999";
-  button.style.height = "40px";
-  button.style.borderRadius = "10px 2px 2px 10px";
-  button.innerText = "Apenas Correios";
-  button.addEventListener("click", window.filtrar_itens);
-  document.body.appendChild(button);
-  clearInterval(window.intervalo);
+  if(!document.getElementById("plugindsz")){
+      // Cria um botão para filtrar os itens
+      let button = document.createElement("button");
+      button.id = "plugindsz";
+      button.className = "shopee-button-solid shopee-button-solid--primary mpD9DF";
+      button.style.backgroundColor = "rgb(163, 0, 255)";
+      button.style.position = "fixed";
+      button.style.right = "0";
+      button.style.bottom = "55%";
+      button.style.width = "94px";
+      button.style.zIndex = "9999999";
+      button.style.height = "40px";
+      button.style.borderRadius = "10px 2px 2px 10px";
+      button.innerText = "Apenas Correios";
+      button.addEventListener("click", window.filtrar_itens);
+      document.body.appendChild(button);
+  }
+  else{
+      clearInterval(window.intervalo);
+  }
 }, 600);
